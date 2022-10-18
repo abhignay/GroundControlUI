@@ -468,7 +468,7 @@ class GUI(QWidget):
         
         # your data should be printed to the serial monitor in this order (seperated by semi-colons) acc X, acc Y, acc Z, kalman alt, kalman vel x, kalmen vel y, kalman vel z, gyro X, gyro Y, gyro Z, on time, flight time, imu temp, baro temp, PY1 state, PY2 state, raw alt, vert acc in G, system state, GNSS data, GNSS time, SIV, latitude, longitude, GNSS alt, GNSS vel X, GNSS vel Y, GNSS vel Z, pDOP 
         # print each data packet in one line (use Serial.print(); for everything except the last value)
-        self.accX, self.accY, self.accZ, self.alt, self.kvelX, self.kvelY, self.kvelZ, self.gyroX, self.gyroY, self.gyroZ, self.on_Time, self.FLT_time, self.imuTemp, self.baroTemp, self.py1S, self.py2S, self.rALT, self.accX_G, self.state, self.gpsDate, self.gpsTime, self.sats, self.lat, self.lon, self.gps_alt, self.gpsVX, self.gpsVY, self.gpsVZ, self.pDOP = allData.split(';')  # type: ignore
+        self.accX, self.accY, self.accZ, self.alt, self.kvelX, self.kvelY, self.kvelZ, self.gyroX, self.gyroY, self.gyroZ, self.on_Time, self.FLT_time, self.imuTemp, self.baroTemp, self.py1S, self.py2S, self.rALT, self.accX_G, self.state, self.gpsDate, self.gpsTime, self.sats, self.lat, self.lon, self.gps_alt, self.gpsVX, self.gpsVY, self.gpsVZ, self.pDOP = allData.split(',')  # type: ignore
 
     def update_plot_data(self):
         # acceleration plot
