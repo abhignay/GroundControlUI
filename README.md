@@ -7,11 +7,13 @@ The frontend for the UI is written in Python with the PyQt5 and PyQtGraph librar
 ![image](https://user-images.githubusercontent.com/74813604/195796788-8944f818-ab9f-4a6a-946b-4890dd9fc1b4.png)
 
 ## Code Explanation
-The `GUI` class has all the functions that create the main GUI window, creates the boxes that display data/graphs and updates the it with telemetry data.
+The `GUI` class has all the functions that create the main GUI window, creates the boxes that display data/graphs, and updates it with telemetry data.
 The `def __init__():` function creates and starts QTimer and runs the window setup function. The `window_setup():` function creates the GUI window and runs all the other functions. Your telemetry data should follow the order mentioned on `line 469`
 
-## A couple other things
-I've only tested this GUI on Ubuntu 22.04, so let me know if you have any problems using it with other platforms (Win, Mac, other Linux distros)
+## A couple of other things
+I've only tested this GUI on Ubuntu 22.04, so let me know if you have any problems using it with other platforms (Win, Mac, and other Linux distros)
+
+If you're using the UI on a laptop and see that all the text is overlapping try changing your display scale to 100% instead of 150%.
 
 Feel free to open up an issue if you have any questions. comments, or feedback
 
